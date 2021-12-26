@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav_header">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </i>
+            </label>
+            <label class="logo"><a class="main-logo" href="index.html">StabaZ</a></label>
+            <ul class="header_ul">
+                <li class="header_li"><a class="menu-link" href="info.html">О нас</a></li>
+                <li class="header_li"><a class="menu-link" href="process.html">Процес</a></li>
+                <li class="header_li"><a class="menu-link" href="training.html">Пробное тестирование</a></li>
+                <li class="header_li"><a class="menu-link" href="reviews.html">Отзывы</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="box">
+                <img src="logo.svg" alt="">
+                <h1 class="main-text">Пройди тест <br>и получи <a class="highlighted" href="info.html">вознаграждение</a></h1>
+                <h2 class="middle-text">Используй свой умственный потенциал на максимум</h2>
+            </div>
+        </div>
+        <div class="join-button">
+            <div class="join-box" onclick="topFunction()">
+                <a href="" class="button-text" id="open_pop_up">Присоединиться к нам</a>
+            </div>
+        </div>
+        <div class="pop_up">
+            <div class="pop_up_container">
+                <div class="pop_up_body">
+                    <p>Оставить заявку</p>
+                    <form action="#" id="form" class="form_body">
+                        <input id="forName" type="text" name="name" placeholder="Имя" class="form__input">
+                        <input id="forSurname" type="text" name="surname" placeholder="Фамилия" class="form__input">
+                        <input id="forTelegram" type="text" name="telegram" placeholder="Ник в телеграме" class="form__input">
+                        <input id="forEmail" type="text" name="email" placeholder="e-mail" class="form__input">
+                        <button type="submit" class="form__button">Оставить заявку</button>
+                    </form>
+                    <div class="pop_up_close">&#10006</div>
+                </div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="elements">
+                <div class="first-element">
+                    <h1>146 102 <br> <span class="element-span">Пройденных теста</span</h1>
+                </div>
+                <div class="second-element">
+                    <h1>11<span class="small">d</span>   22<span class="small">h</span> 02<span class="small">m</span> 22<span class="small">s</span>
+                        <br>
+                            <span class="element-span"> Следующий тест состоится <span class="colored">01.01.2022, 15:30:00 </span></span> </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2021 StabaZ Company. Designed by <span class="colored" >Pasorka</span></p>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
